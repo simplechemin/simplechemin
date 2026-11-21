@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "version": 1,
+    "source": "À compléter avec les données de la page https://www.gtabase.com/fr/gta-6/carte/ (non accessible depuis le conteneur de génération).",
+    "note": "coords = [y, x] en pixels de maps/carte.jpg (origine en haut à gauche, image 4096 x 4096)."
+  },
+  "categories": [
+    { "id": "mission", "label": "Missions", "icon": "🎯" },
+    { "id": "collectible", "label": "Collectibles", "icon": "💎" },
+    { "id": "shop", "label": "Magasins", "icon": "🛒" },
+    { "id": "transport", "label": "Transports", "icon": "🚗" },
+    { "id": "secret", "label": "Secrets", "icon": "🕵️" },
+    { "id": "tip", "label": "Astuces", "icon": "💡" }
+  ],
+  "locations": [
+    {
+      "id": "exemple-1",
+      "name": "Exemple de lieu (à supprimer)",
+      "category": "tip",
+      "region": "Région exemple",
+      "coords": [2048, 2048],
+      "summary": "Ce lieu sert uniquement à vérifier que l’application fonctionne.",
+      "details": ["Remplacez cette entrée par de vraies données."],
+      "tips": ["Ajoutez vos propres entrées au format de data/README.md."],
+      "tags": ["exemple", "test"],
+      "featured": false
+    }
+  ]
+}

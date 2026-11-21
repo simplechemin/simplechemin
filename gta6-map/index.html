@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GTA 6 Carte">
+<meta name="theme-color" content="#0b0f1a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+<title>GTA 6 Carte</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="search-wrap">
+    <span class="search-icon" aria-hidden="true">🔎</span>
+    <input id="search" type="search" placeholder="Rechercher un lieu, une astuce…" autocomplete="off" aria-label="Rechercher">
+    <button id="clear-search" class="icon-btn" aria-label="Effacer" hidden>✖️</button>
+  </div>
+  <div class="search-results" id="results" hidden></div>
+</header>
+
+<nav class="filters" id="filters" aria-label="Catégories"></nav>
+
+<main id="map" aria-label="Carte interactive"></main>
+
+<div class="toolbar">
+  <button id="btn-locate" class="icon-btn" aria-label="Ma position">📍</button>
+  <button id="btn-fav" class="icon-btn" aria-label="Favoris">⭐ <span id="fav-count">0</span></button>
+  <button id="btn-random" class="icon-btn" aria-label="Lieu au hasard">🎲</button>
+  <button id="btn-reset" class="icon-btn" aria-label="Recentrer">🏠</button>
+</div>
+
+<aside id="panel" class="panel" hidden aria-live="polite">
+  <div class="panel-handle"></div>
+  <button id="panel-close" class="icon-btn panel-close" aria-label="Fermer">✖️</button>
+  <div id="panel-content"></div>
+</aside>
+
+<div id="notice" class="notice" hidden></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
